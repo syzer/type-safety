@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/syzer/type-safety/issues"
   },
-  "homepage": "https://github.com/syzer/type-safety#readme"
+  "homepage": "https://github.com/syzer/type-safety#readme",
+  "dependencies": {
+    "lodash": "^4.12.0"
+  }
 }
