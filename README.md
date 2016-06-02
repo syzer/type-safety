@@ -13,24 +13,24 @@ npm install --save type-safety
 # Usage
 
 ```js
-    const hasShape = require('type-safety')
-    const router = express.Router()
+const hasShape = require('type-safety')
+const router = express.Router()
 
-    //.. later
-    router
-        .post('/api/route', hasShape({
-            text: String,
-            sentiment: String
-        }), routeHandler)
-        .post('/api/route2', hasShape({
-            text: String,
-            lang: String
-        }), route2Handler)
+//.. later
+router
+    .post('/api/route', hasShape({
+        text: String,
+        sentiment: String
+    }), routeHandler)
+    .post('/api/route2', hasShape({
+        text: String,
+        lang: String
+    }), route2Handler)
 
-    //.. where  routeHandler, and route2Handler are plain express routes
+//.. where  routeHandler, and route2Handler are plain express routes
 
-    function routeHandler(req, res, next) {
-        // its safe to use
-        console.log(req.body.text)
-    }
+function routeHandler(req, res, next) {
+    // its safe to use
+    console.log(req.body.text)
+}
 ```
