@@ -1,5 +1,7 @@
 # WAT
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/syzer/type-safety.svg)](https://greenkeeper.io/)
+
 Add type safety to any route you have in your `express.js`
 
 Auto Generate API docs, that would be in sync with current project version.
